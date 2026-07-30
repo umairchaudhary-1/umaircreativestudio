@@ -1,0 +1,24 @@
+/* ============================================================
+   CASE STUDY PAGE STYLES
+   ============================================================ */
+
+.cs-meta{ display:grid; grid-template-columns: repeat(4,1fr); gap: 24px; padding: 28px 0; border-top:1px solid var(--line-soft); border-bottom:1px solid var(--line-soft); }
+.cs-meta div{ display:flex; flex-direction:column; gap:6px; }
+.cs-meta span{ font-family: var(--f-mono); font-size:12px; color: var(--muted-2); text-transform:uppercase; letter-spacing:0.06em; }
+.cs-meta b{ font-size:16px; color: var(--white); font-weight:600; }
+@media (max-width: 700px){ .cs-meta{ grid-template-columns: 1fr 1fr; row-gap:20px; } }
+
+.cs-hero-art{ aspect-ratio: 16/8; }
+
+.cs-body-grid{ display:grid; grid-template-columns: 1.6fr 1fr; gap: 60px; }
+.cs-copy p{ color: var(--muted); font-size:16px; line-height:1.75; margin-top:14px; }
+.cs-side-card{ background: var(--surface); border:1px solid var(--line); border-radius: var(--radius-m); padding:26px; margin-bottom:20px; }
+.cs-side-card h5{ font-family: var(--f-mono); font-size:12px; text-transform:uppercase; letter-spacing:0.06em; color: var(--accent-light); margin-bottom:14px; }
+.cs-side-card li{ font-size:14.5px; color: var(--gray); padding: 7px 0; border-bottom:1px solid var(--line-soft); }
+.cs-side-card li:last-child{ border-bottom:0; }
+@media (max-width: 900px){ .cs-body-grid{ grid-template-columns:1fr; } }
+
+.cs-gallery{ display:grid; grid-template-columns: repeat(3,1fr); gap: 22px; }
+@media (max-width: 700px){ .cs-gallery{ grid-template-columns:1fr; } }
+
+.cs-next{ display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:20px; }

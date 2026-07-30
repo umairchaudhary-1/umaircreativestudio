@@ -1,0 +1,16 @@
+/* ============================================================
+   PORTFOLIO PAGE STYLES
+   ============================================================ */
+
+.filter-bar{ display:flex; flex-wrap:wrap; gap:10px; }
+.filter-bar button{
+  font-family: var(--f-body); font-size:13.5px; font-weight:600; color: var(--muted);
+  padding: 11px 20px; border-radius:100px; border:1px solid var(--line); background: transparent;
+  transition: all var(--dur-fast);
+}
+.filter-bar button:hover{ color: var(--white); border-color: rgba(59,130,246,0.5); }
+.filter-bar button.active{ background: var(--accent); color: var(--white); border-color: var(--accent); }
+
+.gallery-grid{ display:grid; grid-template-columns: repeat(3, 1fr); gap: 26px; margin-top: 40px; }
+@media (max-width: 900px){ .gallery-grid{ grid-template-columns: 1fr 1fr; } }
+@media (max-width: 600px){ .gallery-grid{ grid-template-columns: 1fr; } }
